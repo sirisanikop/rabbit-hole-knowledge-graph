@@ -1,0 +1,51 @@
+export const CONCEPT_CATEGORIES = [
+  {
+    key: 'architecture',
+    label: 'Data Structure',
+    description: 'Memory layout, node pointers, and structural organizations',
+    color: '#6366f1',
+    badgeClass: 'bg-indigo-500/15 text-indigo-300 border-indigo-500/30',
+  },
+  {
+    key: 'model',
+    label: 'Algorithmic Pattern',
+    description: 'Techniques like Two Pointers, Sliding Window, and Traversal',
+    color: '#06b6d4',
+    badgeClass: 'bg-cyan-500/15 text-cyan-300 border-cyan-500/30',
+  },
+  {
+    key: 'theory',
+    label: 'Complexity & Big O',
+    description: 'Asymptotic bounds, recurrences, and space-time formalisms',
+    color: '#0284c7',
+    badgeClass: 'bg-sky-500/15 text-sky-300 border-sky-500/30',
+  },
+  {
+    key: 'paradox',
+    label: 'Algorithmic Trade-off',
+    description: 'Time vs space trade-offs, cache locality, and worst-case limits',
+    color: '#a855f7',
+    badgeClass: 'bg-purple-500/15 text-purple-300 border-purple-500/30',
+  },
+  {
+    key: 'question',
+    label: 'Open Inquiry',
+    description: 'Core questions, conceptual comparisons, and design puzzles',
+    color: '#f59e0b',
+    badgeClass: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
+  },
+  {
+    key: 'philosophy',
+    label: 'Design Paradigm',
+    description: 'Divide & Conquer, Greedy heuristics, and Recursion philosophy',
+    color: '#f43f5e',
+    badgeClass: 'bg-rose-500/15 text-rose-300 border-rose-500/30',
+  },
+  {
+    key: 'frontier',
+    label: 'Advanced Frontier',
+    description: 'Dynamic Programming, Tries, Shortest Path, and Graph algorithms',
+    color: '#10b981',
+    badgeClass: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
+  },
+]

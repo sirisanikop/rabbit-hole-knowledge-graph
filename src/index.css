@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Sleek Dark Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* React Flow Dark Theme Custom Polish */
+.react-flow__edge-text {
+  fill: #e4e4e7 !important;
+  font-size: 10.5px !important;
+  font-family: inherit !important;
+  font-weight: 500 !important;
+}
+
+.react-flow__edge-textbg {
+  fill: #18181b !important;
+  stroke: #3f3f46 !important;
+  stroke-width: 1px !important;
+  rx: 6px !important;
+  ry: 6px !important;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #818cf8 !important;
+  stroke-width: 2.5px !important;
+}
+
+.react-flow__edge:hover .react-flow__edge-path {
+  stroke: #a5b4fc !important;
+  stroke-width: 2.2px !important;
+}
+
+.react-flow__handle {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.react-flow__handle:hover {
+  transform: scale(1.4);
+}
+
+/* Custom Controls buttons */
+.react-flow__controls button {
+  transition: all 0.15s ease;
+}
+
+.react-flow__controls button:hover svg {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Focus styles for keyboard accessibility */
+:focus-visible {
+  outline: none;
+}
+
+/* Slow spin utility */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
